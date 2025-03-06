@@ -1,13 +1,24 @@
 import Foundation
 import Darwin
 
-func printSlow(_ text: String, delay: useconds_t = 125000){
-    for char in text {
-        print(char, terminator: "")
+func printSlow(_ text: String, delay: useconds_t = 125000) {
+    var skip = false
+    var index = text.startIndex
+    DispatchQueue.global().async {
+        _ = readLine()
+        skip = true
+    }
+    while index < text.endIndex {
+        if skip {
+            print(text[index...])
+            break
+        }
+        print(text[index], terminator: "")
         fflush(stdout)
-        if char == " "{
+        if text[index] == " " {
             usleep(delay)
         }
+        index = text.index(after: index)
     }
     print()
 }
@@ -33,8 +44,7 @@ n,
       separator: "\n")
     if num == 1 {
         print()
-        print("ERRO CRÍTICO!!!")
-        printSlow("Você quebrou a máquina do tempo!!! Consequentemente você não tem mais como voltar ao seu tempo... Viva uma boa nova vida! (ou morte...☠️)")
+        printSlow("ERRO CRÍTICO!!!\n\nVocê quebrou a máquina do tempo!!! Consequentemente você não tem mais como voltar ao seu tempo... Viva uma boa nova vida! (ou morte...☠️)")
     }
 }
 
@@ -58,5 +68,4 @@ func vencer() {
     print("  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░               ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░")
     print("   ░▒▓██▓▒░   ░▒▓██████▓▒░ ░▒▓██████▓▒░░▒▓████████▓▒░         ░▒▓██▓▒░  ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓████████▓▒░░▒▓██████▓▒░░▒▓█▓▒░")
 }
-
 start()
