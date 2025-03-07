@@ -24,11 +24,7 @@ func guerra_fria () {
             print("Digite qualquer coisa para rolar o D20")
             _ = readLine()
             D20(num: roller)
-            if roller == 20 {
-                printSlow("Você se aproxima rapidamente do general, que continua com seu argumento mirabolante quanto à importância de o Brasil possuir bombas atômicas, sem perceber o que está para acontecer. Você então segura as pernas do general, o levanta, e o defenestra pela janela convenientemente aberta atrás dele. Os demais começam a cantar e bater palmas. Confete começa a voar, e garçons passam a servir drinks. Alguém tira fogos de artifício da mochila e os explode pela janela, para indicar ao mundo o surgimento de um novo paradigma. O consenso se torna contrário à tecnologia nuclear.")
-                vencer()
-                return
-            } else if roller >= 17 {
+            if roller >= 17 {
                 printSlow("Você se aproxima rapidamente do general, que continua com seu argumento mirabolante quanto à importância de o Brasil possuir bombas atômicas, sem perceber o que está para acontecer. Você então segura as pernas do general, o levanta, e o defenestra pela janela convenientemente aberta atrás dele. Os demais ficam em choque e, apesar de discordarem da forma com que você agiu, concordam que aquele general estava errado. O consenso se torna contrário à tecnologia nuclear.")
                 vencer()
                 return
@@ -45,12 +41,8 @@ func guerra_fria () {
                 print("Digite qualquer coisa para rolar o D20")
                 _ = readLine()
                 D20(num: roller)
-                if roller == 20 {
-                    printSlow("Você opta por seguir a carreira diplomática. É incrível como é fácil enganar os demais: afinal, você nunca estudou esses temas, e consegue se passar por um diplomata formado. Você é tão eficiente que todos os países do mundo te concedem cidadania, e você se torna presidente de metade deles. Dessa forma, consegue fazer com que os países abandonem seus programas nucleares, salvando o mundo do apocalipse em 2025.")
-                    vencer()
-                    return
-                } else if roller >= 7 {
-                    printSlow("Você opta por seguir a carreira diplomática. É incrível como é fácil enganar os demais: afinal, você nunca estudou esses temas, e consegue se passar por um diplomata formado. Com o passar do tempo, você consegue galgar posições em órgãos multipartais, e eventualmente vira o primeiro presidente brasileiro da ONU. Nessa posição, já em 2025, atua diretamente para o fim dos estoques de ogivas nucleares no mundo, o que impede o apocalipse nuclear de ocorrer.")
+                if roller >= 7 {
+                    printSlow("Você opta por seguir a carreira diplomática. É incrível como é fácil enganar os demais: afinal, você nunca sequer estudou esses temas, e consegue se passar por um diplomata formado. Com o passar do tempo, você consegue galgar posições em órgãos multipartais, e eventualmente vira o primeiro presidente brasileiro da ONU. Nessa posição, já em 2025, atua diretamente para o fim dos estoques de ogivas nucleares no mundo, o que impede o apocalipse nuclear de ocorrer.")
                     vencer()
                     return
                 } else {
@@ -63,11 +55,7 @@ func guerra_fria () {
                 print("Digite qualquer coisa para rolar o D20")
                 _ = readLine()
                 D20(num: roller)
-                if roller == 20 {
-                    printSlow("Você opta pelo caminho não governamental. Governos nunca foram sua praia, e você sempre achou que causavam mais problemas do que resolviam: afinal, foram eles quem fizeram as bombas. Você se filia a uma ONG que luta contra a proliferação nuclear, e se mantém na luta por décadas. Seu sucesso é tão grande que a ONG passa a ser financiada por quase todos os governos mundiais, e eventualmente passa a substituir a ONU como órgão multilateral do mundo. A partir disso, você consegue atuar diretamente para acabar com os arsenais nucleares, evitando o apocalipse nuclear.")
-                    vencer()
-                    return
-                } else if roller >= 17 {
+                if roller >= 17 {
                     printSlow("Você opta pelo caminho não governamental. Governos nunca foram sua praia, e você sempre achou que causavam mais problemas do que resolviam: afinal, foram eles quem fizeram as bombas. Você se filia a uma ONG que luta contra a proliferação nuclear, e se mantém ativo na luta por décadas, se tornando uma figura mundialmente conhecida e chegando mesmo a falar na ONU como convidado externo. Depois de ganhar o Nobel da Paz, governantes passam a te ouvir, e você consegue influenciar o mundo a abandonar armas nucleares.")
                     vencer()
                     return
@@ -115,11 +103,7 @@ func guerra_fria () {
                 print("Digite qualquer coisa para rolar o D20")
                 _ = readLine()
                 D20(num: roller)
-                if roller == 20 {
-                    printSlow("Você cria um partido independente, que pela primeira vez em quase 200 anos ameaça a hegemonia dos dois partidos dominantes. O povo está tão cansado do cenário atual que seu partido chega ao poder nas eleições seguintes, posição a partir da qual você consegue deter a ameaça nuclear a partir de tratados com outros países.")
-                    vencer()
-                    return
-                } else if roller >= 5 {
+                if roller >= 5 {
                     printSlow("Você cria um partido independente, que pela primeira vez em quase 200 anos ameaça a hegemonia dos dois partidos dominantes. Com o passar das décadas seu partido consegue chegar ao poder, e em 2025 você está em posição de finalmente deter a ameaça nuclear, depois de décadas de desarmamento. Você finaliza o processo, com um tratado com as demais potências nucleares, e a ameaça nuclear é revertida. Ao menos por agora…")
                     vencer()
                     return
@@ -133,11 +117,7 @@ func guerra_fria () {
                 print("Digite qualquer coisa para rolar o D20")
                 _ = readLine()
                 D20(num: roller)
-                if roller == 20 {
-                    printSlow("Você faz carreira em um dos partidos hegemônicos e rapidamente chega à presidência do país, momento em que tem poder o suficiente nas mãos para reduzir a ameaça nuclear. Você se utiliza de todos os recursos disponíveis, inclusive da CIA, para desmantelar os programas nucleares das demais potências, além de desativar as ogivas nucleares já existentes.")
-                    vencer()
-                    return
-                } else if roller >= 17 {
+                if roller >= 17 {
                     printSlow("Você faz carreira em um dos partidos hegemônicos e eventualmente consegue chegar à presidência do país, momento em que teve poder o suficiente nas mãos para reduzir a ameaça nuclear. Os Estados Unidos assinam um acordo com as demais potencias nucleares para destruir todas as ogivas restantes, e a ameaça nuclear é revertida. Ao menos por agora…")
                     vencer()
                     return
@@ -157,12 +137,7 @@ func guerra_fria () {
             print("Digite qualquer coisa para rolar o D20")
             _ = readLine()
             D20(num: roller)
-            if roller == 20 {
-                printSlow("Você tomou uma decisão arriscada, mas no fim os Soviéticos não estavam tão preparados e não tiveram tempo de contra-atacar! Parabéns! Você conseguiu destruir apenas pontos-chave do arsenal soviético, reduzindo o inverno nuclear ao mínimo possível neste cenário.")
-                vencer()
-                return
-            }
-                roller >= 19 {
+            if roller >= 19 {
                 printSlow("Você tomou uma decisão arriscada, mas no fim os Soviéticos não estavam tão preparados e não tiveram tempo de contra-atacar! Parabéns! Você gerou um inverno nuclear menor do que se tivesse havido uma guerra total.")
                 vencer()
                 return
